@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UsuarioApp.CadastroPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="#e9e8ff" Padding="20">
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Name" VerticalOptions="End" />
+				<Entry x:Name="name" HorizontalOptions="FillAndExpand"></Entry>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Possui filhos?" VerticalOptions="End" ></Label>
+				<Switch x:Name="swFilhos" HorizontalOptions="FillAndExpand"></Switch>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Estado" VerticalOptions="End"></Label>
+				<Picker x:Name="estados" HorizontalOptions="FillAndExpand">
+					<Picker.Items>
+						<x:String>RJ</x:String>
+						<x:String>SP</x:String>
+						<x:String>DF</x:String>
+					</Picker.Items>
+				</Picker>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Nascimento" VerticalOptions="End"></Label>
+				<DatePicker x:Name="dtpNascimento" HorizontalOptions="FillAndExpand">
+					<DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
+				</DatePicker>
+			</StackLayout>
+			
+			<Button
+				x:Name="btnSalvar"
+				Text="Salvar"
+				Clicked="BtnSalvar_Clicked">
+				
+			</Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UsuarioApp.ExemploLayoutPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="20">
+			<Label Text="LAYOUT" HorizontalOptions="Center" BackgroundColor="#c4c4c4"></Label>
+			<Label Text="Exemplo de Layout" HorizontalOptions="FillAndExpand" BackgroundColor="#9F9F9F"></Label>
+
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Nome" VerticalOptions="End" ></Label>
+				<Entry x:Name="entNome" HorizontalOptions="FillAndExpand"></Entry>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Sobrenome" VerticalOptions="End" ></Label>
+				<Entry x:Name="entSobrenome" HorizontalOptions="FillAndExpand"></Entry>
+
+			</StackLayout>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>
