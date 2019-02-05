@@ -11,7 +11,7 @@ namespace UsuarioApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ExemploTabbedPage : TabbedPage
-    {
+	{
         public ExemploTabbedPage ()
         {
             InitializeComponent();
