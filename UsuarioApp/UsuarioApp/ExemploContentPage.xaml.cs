@@ -15,6 +15,8 @@ namespace UsuarioApp
 		public ExemploContentPage ()
 		{
 			InitializeComponent ();
+
+			base.Title = "Exemplo de Content Page";
 		}
 	}
 }

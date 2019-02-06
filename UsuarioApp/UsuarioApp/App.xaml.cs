@@ -13,7 +13,7 @@ namespace UsuarioApp
 		{
 			InitializeComponent();
 
-			MainPage = new UsuarioApp.ExemploCorouselPage();
+			MainPage = new NavigationPage(new ExemploContentPage());
 		}
 
 		protected override void OnStart ()
