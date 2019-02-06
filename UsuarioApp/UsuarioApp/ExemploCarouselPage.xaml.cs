@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace UsuarioApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ExemploCorouselPage : CarouselPage
+	public partial class ExemploCarouselPage : CarouselPage
 	{
-		public ExemploCorouselPage ()
+		public ExemploCarouselPage ()
 		{
 			InitializeComponent ();
 		}

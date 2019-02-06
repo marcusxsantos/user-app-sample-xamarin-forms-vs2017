@@ -14,7 +14,7 @@ namespace UsuarioApp
 	{
 		private ListView listMenu;
 
-		public ListView ListMenu { get { return listMenu; } }
+		public ListView ListMenu { get { return lstMenu; } }
 
 		public MenuPage()
 		{
@@ -31,16 +31,40 @@ namespace UsuarioApp
 
 			listMenu.Add(new Item
 			{
+				Title = "Exemplo Carousel Page",
+				TargetType = typeof(ExemploCarouselPage)
+			});
+
+			listMenu.Add(new Item
+			{
+				Title = "Exemplo Content Page",
+				TargetType = typeof(ExemploContentPage)
+			});
+
+			listMenu.Add(new Item
+			{
 				Title = "Exemplo Layout Page",
 				TargetType = typeof(ExemploLayoutPage)
 			});
 
-			ListMenu.ItemsSource = listMenu;
-		}
-	}
+			listMenu.Add(new Item
+			{
+				Title = "Exemplo Tabbed Page",
+				TargetType = typeof(ExemploTabbedPage)
+			});
 
-	public class Item {
-		public string Title { get; set; }
-		public Type TargetType { get; set; }
-	}
+			listMenu.Add(new Item
+			{
+				Title = "Exemplo Http Page",
+				TargetType = typeof(ExemploHttpPage)
+			});
+
+			lstMenu.ItemsSource = listMenu;
+		}
+		public class Item
+		{
+			public string Title { get; set; }
+			public Type TargetType { get; set; }
+		}
+	}	
 }

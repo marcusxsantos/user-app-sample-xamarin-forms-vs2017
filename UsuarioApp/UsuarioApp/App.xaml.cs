@@ -13,7 +13,7 @@ namespace UsuarioApp
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new ExemploContentPage());
+			MainPage = new ExemploMasterDetailPage();
 		}
 
 		protected override void OnStart ()
