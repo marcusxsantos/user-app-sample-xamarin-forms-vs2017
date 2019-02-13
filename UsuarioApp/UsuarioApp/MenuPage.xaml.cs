@@ -25,6 +25,12 @@ namespace UsuarioApp
 
 			listMenu.Add(new Item
 			{
+				Title = "Lista de Usuários",
+				TargetType = typeof(ListaPage)
+			});
+
+			listMenu.Add(new Item
+			{
 				Title = "Cadastro Usuário",
 				TargetType = typeof(CadastroPage)
 			});

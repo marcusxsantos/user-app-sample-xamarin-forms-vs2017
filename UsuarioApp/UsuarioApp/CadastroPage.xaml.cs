@@ -21,5 +21,7 @@ namespace UsuarioApp
 		{
 
 		}
+
+		public void PreencherCampos(Usuario usuario) { }
 	}
 }
